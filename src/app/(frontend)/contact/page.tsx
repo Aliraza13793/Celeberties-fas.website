@@ -4,7 +4,6 @@ import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import Newsletter from "@/components/ui/Newsletter";
 import { Mail, MapPin, Phone, Send, Loader2, CheckCircle } from "lucide-react";
 
 export default function ContactPage() {
@@ -146,10 +145,6 @@ export default function ContactPage() {
             </form>
           </div>
         </div>
-      </section>
-
-      <section className="w-full px-4 sm:px-6 lg:px-8 pb-16">
-        <Newsletter />
       </section>
 
       <Footer />
