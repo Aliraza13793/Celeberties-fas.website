@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
       <Header />
 
       <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <Breadcrumbs items={[{ label: "Privacy Policy" }]} />
           <h1 className="text-4xl md:text-5xl font-bold mt-4">Privacy Policy</h1>
           <p className="mt-4 text-lg text-gray-300">Last updated: July 2026</p>
@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
           <h2>Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy, please contact us at{" "}
-            <a href="mailto:privacy@celebrityfashion.com">privacy@celebrityfashion.com</a>.
+            <a href="mailto:razaali13793@gmail.com">razaali13793@gmail.com</a>.
           </p>
         </div>
       </section>

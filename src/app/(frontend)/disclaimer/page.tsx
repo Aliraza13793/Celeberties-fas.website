@@ -14,7 +14,7 @@ export default function DisclaimerPage() {
       <Header />
 
       <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <Breadcrumbs items={[{ label: "Disclaimer" }]} />
           <h1 className="text-4xl md:text-5xl font-bold mt-4">Disclaimer</h1>
           <p className="mt-4 text-lg text-gray-300">Last updated: July 2026</p>
@@ -34,7 +34,7 @@ export default function DisclaimerPage() {
           <h2>Errors and Omissions</h2>
           <p>While we have made every attempt to ensure accuracy, Celebrity Fashion is not responsible for any errors or omissions.</p>
           <h2>Contact Us</h2>
-          <p>If you have any questions, contact us at <a href="mailto:legal@celebrityfashion.com">legal@celebrityfashion.com</a>.</p>
+          <p>If you have any questions, contact us at <a href="mailto:razaali13793@gmail.com">razaali13793@gmail.com</a>.</p>
         </div>
       </section>
 

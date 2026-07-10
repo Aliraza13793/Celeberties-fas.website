@@ -16,10 +16,10 @@ export default function AboutPage() {
       <Header />
 
       <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <Breadcrumbs items={[{ label: "About Us" }]} />
           <h1 className="text-4xl md:text-5xl font-bold mt-4">About Celebrity Fashion</h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl">
+          <p className="mt-4 text-lg text-gray-300 w-full text-center">
             Your trusted source for everything celebrity fashion since 2020.
           </p>
         </div>
@@ -75,9 +75,7 @@ export default function AboutPage() {
       </section>
 
       <section className="w-full px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="max-w-4xl mx-auto">
-          <Newsletter />
-        </div>
+        <Newsletter />
       </section>
 
       <Footer />

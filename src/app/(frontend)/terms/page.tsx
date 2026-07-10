@@ -14,7 +14,7 @@ export default function TermsPage() {
       <Header />
 
       <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <Breadcrumbs items={[{ label: "Terms of Service" }]} />
           <h1 className="text-4xl md:text-5xl font-bold mt-4">Terms of Service</h1>
           <p className="mt-4 text-lg text-gray-300">Last updated: July 2026</p>
@@ -38,7 +38,7 @@ export default function TermsPage() {
           <h2>7. Changes to Terms</h2>
           <p>We reserve the right to revise these terms at any time without notice.</p>
           <h2>8. Contact Us</h2>
-          <p>If you have any questions, contact us at <a href="mailto:legal@celebrityfashion.com">legal@celebrityfashion.com</a>.</p>
+          <p>If you have any questions, contact us at <a href="mailto:razaali13793@gmail.com">razaali13793@gmail.com</a>.</p>
         </div>
       </section>
 

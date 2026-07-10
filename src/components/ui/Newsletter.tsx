@@ -33,10 +33,12 @@ export default function Newsletter() {
 
   return (
     <section className="bg-gradient-to-r from-rose-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white">
-      <div className="flex flex-col items-center text-center">
-        <Mail className="w-12 h-12 mb-4 text-white/80" />
+      <div className="flex flex-col items-center text-center w-full">
+        <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
+          <Mail className="w-8 h-8 text-white" />
+        </div>
         <h2 className="text-2xl md:text-3xl font-bold">Stay in the Loop</h2>
-        <p className="mt-2 text-white/80">
+        <p className="mt-3 text-lg text-white/90 w-full text-center">
           Get the latest celebrity fashion news, style tips, and exclusive updates delivered to your inbox.
         </p>
 
@@ -66,7 +68,7 @@ export default function Newsletter() {
           </button>
         </form>
 
-        <p className="mt-4 text-xs text-white/60">
+        <p className="mt-4 text-sm text-white/70">
           No spam, unsubscribe at any time.
         </p>
       </div>

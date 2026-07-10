@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
   instagramUrl: "https://instagram.com/celebrityfashion",
   youtubeUrl: "https://youtube.com/celebrityfashion",
   tiktokUrl: "https://tiktok.com/@celebrityfashion",
-  email: "contact@celebrityfashion.com",
+  email: "razaali13793@gmail.com",
 };
 
 export const NAV_ITEMS = [
