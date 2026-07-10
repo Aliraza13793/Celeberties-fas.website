@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import Newsletter from "@/components/ui/Newsletter";
 import GalleryGrid from "./GalleryGrid";
 
 export const metadata: Metadata = {
@@ -46,10 +45,6 @@ export default function GalleryPage() {
 
       <section className="w-full px-4 sm:px-6 lg:px-8 py-12">
         <GalleryGrid items={GALLERY_ITEMS} />
-      </section>
-
-      <section className="w-full px-4 sm:px-6 lg:px-8 py-12">
-        <Newsletter />
       </section>
 
       <Footer />
