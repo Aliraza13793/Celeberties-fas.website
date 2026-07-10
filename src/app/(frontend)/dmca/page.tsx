@@ -14,7 +14,7 @@ export default function DMCAPage() {
       <Header />
 
       <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <Breadcrumbs items={[{ label: "DMCA" }]} />
           <h1 className="text-4xl md:text-5xl font-bold mt-4">DMCA Policy</h1>
           <p className="mt-4 text-lg text-gray-300">Last updated: July 2026</p>
@@ -30,7 +30,7 @@ export default function DMCAPage() {
           <h2>Counter-Notice</h2>
           <p>If you believe your content was removed by mistake, you may file a counter-notice with us.</p>
           <h2>Contact Information</h2>
-          <p>Please send DMCA notices to: <a href="mailto:dmca@celebrityfashion.com">dmca@celebrityfashion.com</a></p>
+          <p>Please send DMCA notices to: <a href="mailto:razaali13793@gmail.com">razaali13793@gmail.com</a></p>
           <h2>Repeat Infringers</h2>
           <p>We have adopted a policy of terminating users who are deemed to be repeat infringers.</p>
         </div>

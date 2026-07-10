@@ -53,7 +53,7 @@ export default function AdminSettingsPage() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Contact Email</label>
-                <input type="email" defaultValue="contact@celebrityfashion.com" className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" />
+                <input type="email" defaultValue="razaali13793@gmail.com" className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none" />
               </div>
               <button className="inline-flex items-center gap-2 px-6 py-3 bg-rose-600 text-white font-semibold rounded-xl hover:bg-rose-700 transition-colors shadow-sm">
                 <Save className="w-4 h-4" /> Save Changes
