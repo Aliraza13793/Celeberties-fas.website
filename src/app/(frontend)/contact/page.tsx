@@ -49,10 +49,10 @@ export default function ContactPage() {
       <Header />
 
       <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <Breadcrumbs items={[{ label: "Contact" }]} />
           <h1 className="text-4xl md:text-5xl font-bold mt-4">Contact Us</h1>
-          <p className="mt-4 text-lg text-gray-300 max-w-2xl">
+          <p className="mt-4 text-lg text-gray-300 w-full text-center">
             Have a question, tip, or just want to say hello? We&apos;d love to hear from you.
           </p>
         </div>
@@ -106,89 +106,42 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Name
-                </label>
-                <input
-                  id="name"
-                  type="text"
-                  required
-                  value={formState.name}
-                  onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  required
-                  value={formState.email}
-                  onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
-                </label>
-                <input
-                  id="subject"
-                  type="text"
-                  required
-                  value={formState.subject}
-                  onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all"
-                  placeholder="How can we help?"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={5}
-                  required
-                  value={formState.message}
-                  onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Your message..."
-                />
+            <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+              <div className="space-y-5">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                  <input id="name" type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none text-gray-900 placeholder:text-gray-400 transition-all" placeholder="Enter your full name" />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                  <input id="email" type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none text-gray-900 placeholder:text-gray-400 transition-all" placeholder="your@email.com" />
+                </div>
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">Subject *</label>
+                  <input id="subject" type="text" required value={formState.subject} onChange={(e) => setFormState({ ...formState, subject: e.target.value })} className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none text-gray-900 placeholder:text-gray-400 transition-all" placeholder="How can we help?" />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                  <textarea id="message" rows={5} required value={formState.message} onChange={(e) => setFormState({ ...formState, message: e.target.value })} className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none text-gray-900 placeholder:text-gray-400 transition-all resize-none" placeholder="Write your message here..." />
+                </div>
               </div>
 
               {status === "success" && (
-                <div className="p-4 bg-green-50 border border-green-200 rounded-xl flex items-center gap-3">
+                <div className="mt-5 p-4 bg-green-50 border border-green-200 rounded-xl flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600" />
-                  <p className="text-green-700 text-sm">Message sent successfully! We&apos;ll get back to you soon.</p>
+                  <p className="text-green-700 text-sm font-medium">Message sent successfully! We&apos;ll get back to you soon.</p>
                 </div>
               )}
 
               {status === "error" && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-xl">
-                  <p className="text-red-600 text-sm">{errorMsg}</p>
+                <div className="mt-5 p-4 bg-red-50 border border-red-200 rounded-xl">
+                  <p className="text-red-600 text-sm font-medium">{errorMsg}</p>
                 </div>
               )}
 
-              <button
-                type="submit"
-                disabled={status === "loading"}
-                className="w-full px-6 py-3 bg-rose-600 text-white font-semibold rounded-xl hover:bg-rose-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
-              >
-                {status === "loading" ? (
-                  <Loader2 className="w-5 h-5 animate-spin" />
-                ) : (
-                  <>
-                    <Send className="w-5 h-5" /> Send Message
-                  </>
-                )}
+              <button type="submit" disabled={status === "loading"} className="w-full mt-6 px-6 py-4 bg-gradient-to-r from-rose-600 to-purple-600 text-white font-semibold rounded-xl hover:from-rose-700 hover:to-purple-700 transition-all disabled:opacity-50 flex items-center justify-center gap-2 shadow-lg shadow-rose-200">
+                {status === "loading" ? (<><Loader2 className="w-5 h-5 animate-spin" /> Sending...</>) : (<><Send className="w-5 h-5" /> Send Message</>)}
               </button>
             </form>
           </div>
