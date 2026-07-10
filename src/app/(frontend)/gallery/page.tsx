@@ -16,7 +16,6 @@ const GALLERY_ITEMS = [
   { id: 4, title: "Spring Fashion Trends", category: "Fashion", color: "#8b5cf6", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=600&fit=crop" },
   { id: 5, title: "Celebrity Beauty Looks", category: "Beauty", color: "#ec4899", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=600&fit=crop" },
   { id: 6, title: "Chanel Collection Preview", category: "Designer", color: "#3b82f6", image: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&h=600&fit=crop" },
-  { id: 7, title: "Kendall Jenner Off-Duty", category: "Street Style", color: "#f59e0b", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=600&fit=crop" },
   { id: 8, title: "Grammy Awards Fashion", category: "Red Carpet", color: "#ef4444", image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=600&fit=crop" },
   { id: 9, title: "Luxury Handbag Trends", category: "Luxury", color: "#059669", image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&h=600&fit=crop" },
   { id: 10, title: "Summer Style Guide", category: "Fashion", color: "#8b5cf6", image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=600&fit=crop" },
